@@ -1,31 +1,19 @@
 openapi: 3.0.0
 info:
-  title: Cheapest Flights
-  description: Provides the options for the cheapest flights
+  title: Hotels
+  description: Provides the information on hotels in a city.
   version: 1.0.0
 servers:
-  - url: https://sky-scanner3.p.rapidapi.com/flights
+  - url: https://sky-scanner3.p.rapidapi.com/hotels
 paths:
-  /cheapest-one-way:
+  /auto-complete:
     get:
       summary: Get cheapest flights
       operationId: findCheapestFlights
       parameters:
-        - name: fromEntityId
+        - name: query
           in: query
-          description: Starting location
-          required: true
-          schema:
-            type: string
-        - name: toEntityId
-          in: query
-          description: Ending location
-          required: true
-          schema:
-            type: string
-        - name: departDate
-          in: query
-          description: Date of flight
+          description: city of hotels
           required: true
           schema:
             type: string

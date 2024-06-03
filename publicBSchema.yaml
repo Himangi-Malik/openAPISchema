@@ -29,19 +29,19 @@ paths:
           required: true
           schema:
             type: number
-        # - name: ada
-        #   in: query
-        #   description: Whether the given results are ADA accessible which is defaulted to false.
-        #   schema:
-        #     type: boolean
-        # - name: unisex
-        #   in: query
-        #   description: Whether bathrooms are unisex.
-        #   schema:
-        #     type: boolean
+        - name: ada
+          in: query
+          description: Whether the given results are ADA accessible which is defaulted to false.
+          schema:
+            type: boolean
+        - name: unisex
+          in: query
+          description: Whether bathrooms are unisex.
+          schema:
+            type: boolean
       responses:
         '200':
-          description: A successful response. qs
+          description: A successful response.
         '400':
           description: Bad request when query parameters are missing or invalid.
         '401':
