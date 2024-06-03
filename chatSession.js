@@ -28,5 +28,6 @@ createChatSession(apiKey, externalUserId);
 // Assuming sessionId is obtained from the response of createChatSession
 const sessionId = '12345'; // Example session ID
 
+query = //add the response from the input box
 // Answer query
-answerQuery(apiKey, sessionId, "Put your query here");
+answerQuery(apiKey, sessionId, query);
