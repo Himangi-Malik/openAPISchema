@@ -4,7 +4,7 @@ info:
   description: An API to find gender-neutral and accessible restrooms and retrieve weather information.
   version: 1.0.0
 servers:
-  - url: https://www.refugerestrooms.org/api/v1/
+  - url: https://www.refugerestrooms.org/api/v1
     description: Production server for Refuge Restrooms API
   - url: https://api.openweathermap.org/data/2.5
     description: Open Weather API server
